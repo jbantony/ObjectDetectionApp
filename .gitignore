@@ -1,3 +1,4 @@
 .vscode
 data
-statisFiles\uploads\
+statisFiles/uploads
+__pycache__

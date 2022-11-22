@@ -19,3 +19,14 @@ The complete enviorment is listed under the file `environment_all.yml`
 Run the app in Debug Mode
 
 `flask --app flask_object_detection_app --debug run`
+
+#### Page1
+
+
+#### Page 2
+
+
+#### Page 3
+
+
+#### Page 4

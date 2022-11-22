@@ -1,4 +1,5 @@
 .vscode
 data
-statisFiles/uploads
+statisFiles/uploads/
 __pycache__
+statisFiles/uploads/output_image.jpg

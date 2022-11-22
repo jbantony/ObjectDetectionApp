@@ -1,0 +1,38 @@
+body {
+    background: linen;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.5em;
+    color: firebrick;
+}
+
+p {
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    color: darkslategray;
+}
+
+.style1 {
+    font-size: 11pt; 
+    font-family: Arial;
+    border-collapse: collapse; 
+    border: 1px solid silver;
+
+}
+
+.style1 td, th {
+    padding: 5px;
+}
+
+.style1 tr:nth-child(even) {
+    background: #E0E0E0;
+}
+
+.style1 tr:hover {
+    background: silver;
+    cursor: pointer;
+}

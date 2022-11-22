@@ -22,11 +22,13 @@ Run the app in Debug Mode
 
 #### Page1
 
+![page1](docs/page1.png)
 
 #### Page 2
-
+![page2](docs/page2.png)
 
 #### Page 3
-
+![page3](docs/page3.png)
 
 #### Page 4
+![page4](docs/page4.png)

@@ -12,6 +12,7 @@ import pickle
 from werkzeug.utils import secure_filename
 import numpy as np
 from collections import OrderedDict, defaultdict
+import urllib.request
 
 UPLOAD_FOLDER = os.path.join('statisFiles', 'uploads')
 ALLOWED_EXTENSIONS = {'txt', 'jpg', 'jpeg', 'gif', 'png', 'pdf'}
@@ -29,6 +30,15 @@ def detect_object(uploaded_image_path):
 
     #load Yolo
     # ------------ Optimize -----------
+    if os.path.exists("data/model/yolov3.weights"):
+        yolo_weight = "data/model/yolov3.weights"
+    else:
+        print("Downloading Model File......")
+        URL = "https://pjreddie.com/media/files/yolov3.weights"
+        yolo_weight= urllib.request.urlretrieve(URL, filename="data/model/yolov3.weights")
+        print("Model download complete")
+        
+
     yolo_weight = "data/model/yolov3.weights"
     yolo_config= "data/model/yolov3.cfg"
     coco_names = "data/model/coco.names"

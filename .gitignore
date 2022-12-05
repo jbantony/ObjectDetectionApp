@@ -1,5 +1,5 @@
 .vscode
 data/model/yolov3.weights
-statisFiles/uploads/
+statisFiles/uploads/**
 __pycache__
 statisFiles/uploads/output_image.jpg

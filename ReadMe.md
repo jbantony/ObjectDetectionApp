@@ -1,6 +1,8 @@
-## Object Detection App based on Flask
+## Object Detection App based on Flask in Docker
 
-This a simple Object Detection App working on browser using Flask and YOLOv3
+This a simple Object Detection App working on browser using Flask and YOLOv3. The user can select any image and the app will visualise an image with results together with a list of detected objects and a counter showing the total number of deteted objects. 
+
+The object detection based on YOLOv3
 
 - #### Model Used
  YOLOv3 320x320 from Darknet 
@@ -13,12 +15,21 @@ This a simple Object Detection App working on browser using Flask and YOLOv3
 
 ### Dependencies
 
+Making the app run locally, the dependencies shall be created in a virtual enviorment as follows:
+
+#### Using on Anaconda
+
 Create an enviorment for the app using 
 
 `conda env create -f environment.yml`
 
 The complete enviorment is listed under the file `environment_all.yml`
 
+#### Using on virtualenvs
+
+Create the virtual enviorment and install the required libraries from `requirements.txt` 
+
+`pip install -r requirements.txt`
 
 ### API Calls
 
@@ -52,21 +63,22 @@ After sucessful building, run the docker `docker run -ti --rm -p 5000:5000 odapp
 
 and open a browser in the host machine `http://localhost:5000/` to visualise the app.
 
+## App Views:
 
+### Page1: Landing page
 
-#### Page1
+You can select the image in this page
 
 ![page1](docs/page1.png)
 
-#### Page 2
+### Page 2 Confirmation message on sucessful upload 
 ![page2](docs/page2.png)
 
-#### Page 3
+### Page 3 Visualise the uploaded image
 ![page3](docs/page3.png)
 
-#### Page 4
+### Page 4: Perform Object Detection, counting and visualise the results
 ![page4](docs/page4.png)
-
 
 
 #### Reference

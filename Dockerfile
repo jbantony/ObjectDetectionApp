@@ -22,11 +22,10 @@ WORKDIR /data/model
 
 RUN curl -o yolov3.weights https://pjreddie.com/media/files/yolov3.weights
 
-EXPOSE 80
-
 WORKDIR /work
 
 RUN mkdir -p /statisFiles/uploads
 
-CMD ["flask", "--app", "flask_object_detection_app", "--debug", "--host", "0.0.0.0", "--port", "80", "run" ]
+ENTRYPOINT ["python"]
 
+CMD ["flask_object_detection_app.py"]

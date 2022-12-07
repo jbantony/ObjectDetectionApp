@@ -37,6 +37,23 @@ Run the app in Debug Mode
 
 `flask --app flask_object_detection_app --debug run`
 
+OR
+
+`python flask_object_detection_app.py`
+
+### Running the App in Docker
+
+1. Build the Docker Image
+
+Build the image with  `docker build -t odapp .`
+
+2. Run the app in Docker
+After sucessful building, run the docker `docker run -ti --rm -p 5000:5000 odapp`
+
+and open a browser in the host machine `http://localhost:5000/` to visualise the app.
+
+
+
 #### Page1
 
 ![page1](docs/page1.png)

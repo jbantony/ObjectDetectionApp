@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:3.9-slim
 
 LABEL maintainer="Jibinraj Antony <jibinraj.antony@dfki.de>"
 
@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND = noninteractive
 
 RUN apt-get update && yes | apt-get upgrade
 
-RUN  apt-get install ffmpeg libsm6 libxext6  -y
+RUN  apt-get install ffmpeg libsm6 libxext6 curl  -y
 
 RUN mkdir -p /work
 
